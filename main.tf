@@ -17,3 +17,7 @@ module "mysql" {
 #   source              = "./vendor/modules/rabbitmq"
 #   ENV                 = var.ENV
 # }
+
+output "redis-output" {
+  value = module.redis.redis-output
+}
