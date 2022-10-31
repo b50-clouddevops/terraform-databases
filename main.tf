@@ -8,8 +8,14 @@ module "mongodb" {
 }
 
 module "redis" {
-  source              = "./vendor/modules/redis"
-  ENV                 = var.ENV
+  source                      = "./vendor/modules/redis"
+  ENV                         = var.ENV
+  ELASTICCACHE_PORT           = var.ELASTICCACHE_PORT
+  ELASTICCACHE_NODE_COUNT     = var.ELASTICCACHE_NODE_COUNT 
+  ELASTICCACHE_NODE_TYPE      = var.ELASTICCACHE_NODE_TYPE 
+  ELASTICCACHE_ENGINE_VERSION = var.ELASTICCACHE_ENGINE_VERSION
+
+
 }
 
 module "mysql" {
@@ -28,6 +34,7 @@ module "mysql" {
 #   ENV                 = var.ENV
 # }
 
-output "redis-output" {
-  value = module.redis.redis-output
-}
+# Created for debugging
+# output "redis-output" {
+#   value = module.redis.redis-output
+# }
