@@ -1,1 +1,5 @@
 ENV = "dev"
+
+# MySQL Varaible Values 
+MYSQL_PORT_NUMBER = 3306 
+MYSQL_PORT_NUMBER
