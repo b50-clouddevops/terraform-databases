@@ -10,3 +10,9 @@ variable "MYSQL_INSTANCE_CLASS" {}
 variable "DOCDB_PORT" {}
 variable "DOCDB_INSTANCE_CLASS" {}
 variable "DOCDB_INSTANCE_COUNT" {}
+
+# Elasticcache Vars
+variable "ELASTICCACHE_PORT" {}
+variable "ELASTICCACHE_NODE_COUNT" {}
+variable "ELASTICCACHE_NODE_TYPE" {}
+variable "ELASTICCACHE_ENGINE_VERSION" {}
