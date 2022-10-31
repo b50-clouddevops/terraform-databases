@@ -4,7 +4,6 @@ module "mongodb" {
   DOCDB_PORT           = var.DOCDB_PORT 
   DOCDB_INSTANCE_CLASS = var.DOCDB_INSTANCE_CLASS
   DOCDB_INSTANCE_COUNT = var.DOCDB_INSTANCE_COUNT
-
 }
 
 module "redis" {
@@ -14,8 +13,6 @@ module "redis" {
   ELASTICCACHE_NODE_COUNT     = var.ELASTICCACHE_NODE_COUNT 
   ELASTICCACHE_NODE_TYPE      = var.ELASTICCACHE_NODE_TYPE 
   ELASTICCACHE_ENGINE_VERSION = var.ELASTICCACHE_ENGINE_VERSION
-
-
 }
 
 module "mysql" {
@@ -25,8 +22,6 @@ module "mysql" {
   MYSQL_STORAGE        = var.MYSQL_STORAGE 
   MYSQL_ENGINE_VERSION = var.MYSQL_ENGINE_VERSION
   MYSQL_INSTANCE_CLASS = var.MYSQL_INSTANCE_CLASS
-
-
 }
 
 # module "rabbitmq" {
