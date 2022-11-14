@@ -33,3 +33,8 @@ module "mysql" {
 # output "redis-output" {
 #   value = module.redis.redis-output
 # }
+
+
+output "MONGODB_ENDPOINT" {
+  value = module.mongodb.MONGODB_ENDPOINT
+}
