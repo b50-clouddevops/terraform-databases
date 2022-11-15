@@ -27,6 +27,7 @@ module "mysql" {
 module "rabbitmq" {
   source              = "./vendor/modules/rabbitmq"
   ENV                 = var.ENV
+  RABBITMQ_PORT       = var.RABBITMQ_PORT
 }
 
 # Created for debugging
