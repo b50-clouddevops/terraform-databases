@@ -24,10 +24,10 @@ module "mysql" {
   MYSQL_INSTANCE_CLASS = var.MYSQL_INSTANCE_CLASS
 }
 
-# module "rabbitmq" {
-#   source              = "./vendor/modules/rabbitmq"
-#   ENV                 = var.ENV
-# }
+module "rabbitmq" {
+  source              = "./vendor/modules/rabbitmq"
+  ENV                 = var.ENV
+}
 
 # Created for debugging
 # output "redis-output" {
