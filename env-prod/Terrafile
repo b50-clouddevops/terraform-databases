@@ -8,4 +8,4 @@ redis:
 
 mysql:
     source:  "https://github.com/b50-clouddevops/tf-module-mysql.git"
-    version: "main"
+    version: "main" 
